@@ -8,7 +8,7 @@ const perroSchema = new mongoose.Schema({
     color: String,
     tamaño: String,
     peso_kg: Number,
-    vacunas: Boolean,
+    vacunas: String,
     nombre_propietario: String
 
 });
