@@ -9,8 +9,8 @@ const perroSchema = new mongoose.Schema({
     tamaño: String,
     peso_kg: Number,
     vacunas: String,
-    nombre_propietario: String
-
+    nombre_propietario: String,
+    usuario: { type: mongoose.Schema.Types.ObjectId, ref: 'Usuario'}
 });
 
 const perroModel = mongoose.model('Perro', perroSchema, 'perros');
